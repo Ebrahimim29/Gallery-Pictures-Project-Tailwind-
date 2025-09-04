@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/input.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Gallery Picture Project(Tailwind)</title>
+</head>
+
+<body class="flex flex-col min-h-[100dvh]">
+    <header class="bg-gradient-to-r from-30% from-yellow-300 to-70% to-green-600 text-white p-4">
+        <a href="#" class="hover:bg-gray-700 px-3 py-2 rounded flex items-center peer">
+            <span>خدمات</span><span class="ms-2 rotate-180">△</span>
+        </a>
+
+        <!-- منوی دراپ داون -->
+        <ul class="absolute z-10 transition-all duration-500 w-32 overflow-hidden h-0 peer-focus:h-50 text-white bg-lime-900 ">
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-600">خانه</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-600"> آدرس</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-600"> تماس با ما</a>
+            </li>
+        </ul>
+    </header>
+    <main class="bg-[url(/src/assets/Image/6.jpeg)] bg-cover bg-center
+    grow p-4 bg-white/30 bg-blend-overlay"></main>
+    <!-- .peer: این سلکتور در تیلویند در واقع کار سلکتورهای همسطح با نماد تیلد ~ را انجام می دهد -->
+    <footer class="bg-gray-700 p-4"></footer>
+</body>
+
+</html>
