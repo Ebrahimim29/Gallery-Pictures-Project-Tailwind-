@@ -7,10 +7,13 @@
     <link href="./src/input.css" rel="stylesheet">
     <link href="./src/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Gallery Picture Project(Tailwind)</title>
 </head>
 
-<body dir="rtl" class="flex flex-col min-h-[100dvh]">
+<body dir="rtl" class="flex flex-col min-h-[100dvh] dark">
     <header class="flex bg-gradient-to-r from-30% from-yellow-300 to-70% to-green-600 text-white p-4 
     justify-between md:justify-center items-center md:gap-10">
 
@@ -81,7 +84,7 @@
         <!-- Sidebar Menu -->
         <aside class="w-8 md:hidden">
             <label for="checkbox">
-                <img tabindex="0" src="/src/assets/Image/Menu.svg" alt="" class="w-full">
+                <img tabindex="0" src="/src/assets/Image/Menu.svg" alt="" class="w-full bg-regal-blue">
             </label>
 
             <input class="hidden peer" id="checkbox" type="checkbox">
@@ -129,12 +132,11 @@
     </header>
 
     <main class="bg-[url(/src/assets/Image/6.jpeg)] bg-cover bg-center
-    grow p-4 bg-white/30 bg-blend-overlay">
+    grow p-4 bg-white/30 bg-blend-overlay dark:bg-amber-900">
 
-        <h2 class="mx-auto p-2 text-center text-white">گالری تصاویر</h2>
+        <h2 class="mx-auto p-2 text-center text-regal-blue">گالری تصاویر</h2>
 
-        <section
-            class="max-w-[90%] xl:max-w-11/12 mx-auto flex flex-col xl:flex-row justify-center gap-4 p-4 ">
+        <section class="max-w-[90%] xl:max-w-11/12 mx-auto flex flex-col xl:flex-row justify-center gap-4 p-4 ">
             <!-- تصویر 1 -->
             <div class="relative shadow-lg overflow-hidden rounded-lg w-full xl:w-[30%] 
             inline-block">
@@ -142,7 +144,7 @@
                     <img class="w-full h-full object-cover rounded-2xl" src="/src/assets/Image/6.jpeg" alt="تصویر">
                     <div class="absolute group rounded-2xl w-full bg-black/50 hover:bg-black/10
                     transition duration-300 inset-0">
-                        <p class="text-white w-1/2 mx-auto bg-amber-900 outline-solid
+                        <p class="text-white w-1/2 mx-auto bg-amber-900 animate-ping outline-solid
                         outline-4 outline-offset-1 outline-sky-700 p-3 shadow-2xl mb-5
                         shadow-black rounded-2xl text-center text-xl mt-4 duration-300
                         opacity-0 group-hover:opacity-100 group-active:text-red-700">کلیک کنید</p>
@@ -157,7 +159,7 @@
                     <img class="w-full h-full object-cover rounded-2xl" src="/src/assets/Image/5.jpeg" alt="تصویر">
                     <div class="absolute group rounded-2xl w-full bg-black/50 hover:bg-black/10
                     transition duration-300 inset-0">
-                        <p class="text-white w-1/2 mx-auto bg-amber-900 outline-solid
+                        <p class="text-white w-1/2 mx-auto bg-amber-900 animate-spin outline-solid
                         outline-4 outline-offset-1 outline-sky-700 p-3 shadow-2xl mb-5
                         shadow-black rounded-2xl text-center text-xl mt-4 duration-300
                         opacity-0 group-hover:opacity-100 group-active:text-red-700">کلیک کنید</p>
@@ -172,7 +174,7 @@
                     <img class="w-full h-full object-cover rounded-2xl" src="/src/assets/Image/4.jpeg" alt="تصویر">
                     <div class="absolute group rounded-2xl w-full bg-black/50 hover:bg-black/10
                     transition duration-300 inset-0">
-                        <p class="text-white w-1/2 mx-auto bg-amber-900 outline-solid
+                        <p class="text-white w-1/2 mx-auto animate-pulse bg-amber-900 outline-solid
                         outline-4 outline-offset-1 outline-sky-700 p-3 shadow-2xl mb-5
                         shadow-black rounded-2xl text-center text-xl mt-4 duration-300
                         opacity-0 group-hover:opacity-100 group-active:text-red-700">کلیک کنید</p>
@@ -187,7 +189,7 @@
                     <img class="w-full h-full object-cover rounded-2xl" src="/src/assets/Image/3.jpeg" alt="تصویر">
                     <div class="absolute group rounded-2xl w-full bg-black/50 hover:bg-black/10
                     transition duration-300 inset-0">
-                        <p class="text-white w-1/2 mx-auto bg-amber-900 outline-solid
+                        <p class="text-white w-1/2 mx-auto bg-amber-900 animate-bounce outline-solid
                         outline-4 outline-offset-1 outline-sky-700 p-3 shadow-2xl mb-5
                         shadow-black rounded-2xl text-center text-xl mt-4 duration-300
                         opacity-0 group-hover:opacity-100 group-active:text-red-700">کلیک کنید</p>
@@ -233,15 +235,17 @@
 
     </main>
 
+    <div class="btn-primary animate-bounce h-10 text-shadow text-center w-5/12 mx-auto cursor-pointer">Click<i class="fas fa-user-astronaut"></i></div>
+
     <footer class="bg-gray-700 p-4">
         <div class="grid grid-cols-1 xl:grid-cols-3 gap-x-4 gap-y-2">
             <div class="bg-yellow-200/15 h-20 xl:col-span-2 text-center">آدرس: تهران- خیابان مطهری</div>
             <div class="bg-red-200/20 xl:row-span-2 text-center">
                 <p class="m-4">
-                <img class="inline-block" src="/src/assets/Image/telegram.svg"> Mohammad Mirebrahimi <br>
-                <img class="inline-block" src="/src/assets/Image/twitter.svg"> Mohammad Mirebrahimi <br>
-                <img class="inline-block" src="/src/assets/Image/instagram.svg"> Mohammad Mirebrahimi <br>
-                <img class="inline-block" src="/src/assets/Image/whatsapp.svg"> Mohammad Mirebrahimi
+                    <img class="inline-block" src="/src/assets/Image/telegram.svg"> Mohammad Mirebrahimi <br>
+                    <img class="inline-block" src="/src/assets/Image/twitter.svg"> Mohammad Mirebrahimi <br>
+                    <img class="inline-block" src="/src/assets/Image/instagram.svg"> Mohammad Mirebrahimi <br>
+                    <img class="inline-block" src="/src/assets/Image/whatsapp.svg"> Mohammad Mirebrahimi
                 </p>
             </div>
             <div class="bg-green-200 h-20 text-4xl text-center">C</div>
@@ -250,8 +254,12 @@
              text-4xl text-center text-red-600">E</div>
             <div class="bg-orange-200 h-20 text-4xl text-center">F</div>
             <div class="bg-pink-200 h-20 text-4xl text-center">G</div>
-            <div class="bg-amber-300 h-20 text-4xl text-center">H</div>
+            <div
+                class="bg-green-200 h-20 text-4xl text-center fill-cyan-500 drop-shadow-3xl drop-shadow-cyan-500/50 ...">
+                H
+            </div>
         </div>
+        part 216:Icon
     </footer>
 
 
